@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twice Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <video class="bg-video" autoplay="true" muted loop src="img/video.mp4"></video>
+    <h1 id="title">Travel Survey Form</h1>
+    <p id="description">Please fill the form, thank you.</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter your email" required />
+        </label>
+
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="How old are you?" min="15" max="40" />
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            Do you like traveling?
+            <select id="dropdown">
+                <option>Yes</option>
+                <option>No</option>
+                <option>Sometimes</option>
+            </select>
+        </label>
+
+        <label for="member" id="member-label">Favorite traveling place?</label>
+
+        <input type="radio" name="member" value="1" checked /> Beach<br />
+        <input type="radio" name="member" value="2" /> Mountain <br />
+        <input type="radio" name="member" value="3" /> Sky <br />
+
+        <br />
+        <label for="albums" id="albums-label"> Favorite food? </label>
+
+        <input type="checkbox" value="cry-for-me" /> Seafood <br />
+        <input type="checkbox" value="eyes-wide-open" /> Steak <br />
+        <input type="checkbox" value="more-and-more" /> Desserts <br />
+        <br />      
+
+        <label for="comments" id="comments-label">
+            Any comments or suggestions?
+            <textarea id="comments" cols="30" rows="10"></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
